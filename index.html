@@ -7,27 +7,26 @@
     <title>JavaScript Recycling Game</title>
 </head>
 <body>
-    <header>
-        <h1>JavaScript Recycling Game</h1>
-    </header>
-    <main>
-        <div id="timer">
-            Seconds: 30
+    <div class="game-container">
+        <div class="score-timer">
+            <div class="score">Score: 0</div>
+            <div class="timer">Seconds: 30</div>
         </div>
-        <div id="recycle-bin" class="bin">
-            Recycle Bin
+        <div class="game-area">
+            <details id="game-card" class="item-card">
+                <summary id="item-name">Item Name</summary>
+                <img id="item-range" src="" alt="Item Image"/>
+            </details>
         </div>
-        <div id="game-card" class="card">
-            <img id="item-image" src="" alt=""/>
-            <div id="item-name">Item to Throw</div>
+        <div class="bins">
+            <ul id="recycle-bin">
+                <li>This is a long task</li>
+            </ul>
+            <ul id="trash-bin">
+                <li>This is another long task</li>
+            </ul>
         </div>
-        <div id="trash-bin" class="bin">
-            Trash Bin
-        </div>
-        <div id="score">
-            Score : 0
-        </div>
-    </main>
+    </div>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

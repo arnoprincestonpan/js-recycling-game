@@ -1,17 +1,30 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
 }
 
-main {
+.game-container {
     display: flex;
-    flex-direction: row;
-    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.score-timer {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.game-area{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 .bin {
